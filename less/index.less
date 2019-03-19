@@ -57,3 +57,242 @@ html, body {
     height: 100%;
 }
 
+/*--------------
+My Code Starts Here 
+---------------*/
+@font-stack: "Trebuchet MS", Helvetica, sans-serif;
+@color-primary: #2bfc4e;
+@color-prim-light: lighten(@color-primary, 40%);
+@color-secondary: #006e06;
+
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	padding: 0 20px;
+}
+
+div, p, h1, h2, h3, h4, h5, h6, nav, a, address, caption {
+	font-family: @font-stack;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 6.5rem;
+	text-align: center;
+}
+
+h4 {
+	font-size: 5.5rem;
+}
+
+header, section {
+	margin-bottom: 30px;
+}
+
+section {
+	padding: 50px 0;
+}
+
+hr {
+	margin-bottom: 20px;
+}
+
+button, a {
+	cursor: pointer;
+}
+
+.border(@size) {
+	-webkit-border-radius: @size;
+	-moz-border-radius: @size;
+	border-radius: @size;
+}
+
+a {
+	width: 100%;
+	color: #000;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+header {
+	display: block;
+
+	nav {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-around;
+		align-items: center;
+		border-top: 2px solid #000;
+		
+		a {
+			border: 1px solid #000;
+			text-decoration: none;
+			text-align: center;
+			font-size: 7rem;
+			padding: 20px 0;
+		}
+	}
+}
+
+.intro {
+	background: #f7fff4;
+
+	.img-cont {
+		display: block;
+		width: 70%;
+		background: linear-gradient(to bottom right, @color-primary, rgb(0, 110, 6));
+		padding: 5px;
+		margin: 0 auto 20px;
+		.border(50%);
+
+		img {
+			width: 100%;
+			.border(50%);
+			border: 10px solid #fff;
+		}
+	}
+
+	h1 {
+		font-size: 7.5rem;
+		text-transform: uppercase;
+		text-align: center;
+		font-weight: bold;
+	}
+
+	p {
+		width: 80%;
+		font-size: 3rem;
+		font-weight: 100;
+		margin: 0 auto;
+		text-align: justify;
+
+		&.tagline {
+			font-style: italic;
+			color: rgb(73, 73, 73);
+			text-align: center;
+			margin-bottom: 20px;
+		}
+
+		&.description{
+			margin-bottom: 20px;
+		}
+	}
+
+	button {
+		display: block;
+		width: 50%;
+		font-size: 5rem;
+		padding: 20px;
+		background: @color-primary;
+		outline: none;
+		margin: 0 auto;
+		border: 2px solid #000;
+		.border(10px);
+	}
+}
+
+.skills {
+
+	h3 {
+		color: #000;	
+	}
+
+	ul {
+		list-style-type: none;
+		border-bottom: 0;
+
+		li {
+			border: 1px solid #000;
+			font-size: 4rem;
+			text-align: center;
+			padding: 35px 0;
+			margin-bottom: 10px;
+			animation: shrink 0.25s 0 forwards;
+			-webkit-animation: shrink 0.25s 0s forwards;
+
+			&:hover {
+				animation: grow 0.25s 0s forwards;
+				-webkit-animation: grow 0.25s 0s forwards;
+			}
+		}
+	}
+}
+
+.work-hist {
+	ul {
+		li {
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: center;
+			width: 100%;
+
+			div {
+				width: 100%;
+				padding: 20px 30px;
+
+				p {
+					font-size: 4rem;
+				}
+			}
+		}
+		p {
+			&.date {
+				font-size: 9rem;
+				text-align: center;
+				font-weight: bold;
+				border: 2px solid #000;	
+				background: #f2f2f2;
+				width: 200px;
+				height: 200px;
+			}
+
+			span {
+				display: block;
+				font-size: 4rem;
+				text-transform: uppercase;
+				font-weight: 100;
+			}
+		}
+	}
+}
+
+@keyframes shrink {
+	0% {
+		padding: 100px 0;
+		background-color: @color-prim-light;
+	}
+	100% {
+		padding: 35px 0;
+		background-color: #fff;
+	}
+}
+
+@keyframes grow {
+	0% {
+		padding: 35px 0;
+		background-color: #fff;
+	}
+	100% {
+		padding: 100px 0;
+		background-color: @color-prim-light;
+	}
+}
+
+/*----------------
+MEDIA QUERIES
+--------------------*/
+
+@tablet: 501px;
+@desktop: 850px;
+
+@media(min-width: @tablet){
+
+}

@@ -398,6 +398,10 @@ MEDIA QUERIES
 			display: block;
 		}
 	}
+
+	.skills, .work-hist {
+		padding: 50px 0;
+	}
 }
 
 @media(min-width: @desktop) {
@@ -468,6 +472,14 @@ MEDIA QUERIES
 		display: inline-block;
 		width: 48%;
 		padding: 40px 0;
+	}
+
+	.skills {
+		.floater {
+			display: relative;
+			height: 0;
+			transform: rotate(45deg);
+		}
 	}
 
 	.contact {

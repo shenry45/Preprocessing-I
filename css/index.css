@@ -417,6 +417,10 @@ MEDIA QUERIES
   .intro button {
     display: block;
   }
+  .skills,
+  .work-hist {
+    padding: 50px 0;
+  }
 }
 @media (min-width: 800px) {
   body {
@@ -476,6 +480,11 @@ MEDIA QUERIES
     display: inline-block;
     width: 48%;
     padding: 40px 0;
+  }
+  .skills .floater {
+    display: relative;
+    height: 0;
+    transform: rotate(45deg);
   }
   .contact {
     padding: 40px 0;

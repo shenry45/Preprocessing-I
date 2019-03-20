@@ -30,7 +30,7 @@ Follow these steps for completing your project.
 **Note: you are only required to build one page, anything more than that would be stretch.**
 * [ x ] The resume content will be provided by you. The content can be about you or a fictional character.  
 * [ x ] Content: Navigation - Build a simple navigation with 4 items of your choosing
-* [ ] Content: Intro - Have a short introduction as to why you would be a good hire
+* [ x ] Content: Intro - Have a short introduction as to why you would be a good hire
 * [ x ] Content: Skills - Showcase a list of skills you have somewhere on your resume
 * [ x ] Content: Work History - Showcase your work history somewhere on your resume
 * [ x ] Content: Contact - Provide some way a potential employer could contact you.  Phone number, email, or a full on contact form (doesn't have to work)

@@ -412,6 +412,7 @@ MEDIA QUERIES
   }
   .intro p {
     width: 100%;
+    max-width: 400px;
   }
   .intro button {
     display: block;
@@ -447,16 +448,22 @@ MEDIA QUERIES
   }
   .intro div {
     width: 100%;
-    padding: 10px 50px;
+    padding: 10px 0;
   }
   .intro .img-cont {
-    max-width: 250px;
+    max-width: 225px;
+    margin: 0 auto;
   }
   .intro .img-cont .headshot {
     padding: 0;
   }
   .intro button {
     width: auto;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.8em;
+    color: #fff;
+    background: linear-gradient(to bottom right, #006e06, #003b03);
   }
   .detail {
     width: 100%;
